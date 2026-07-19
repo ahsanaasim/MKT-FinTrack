@@ -703,7 +703,7 @@ function SupportLink() {
     <Button variant="link" className="justify-start px-0" asChild>
       <Link href="mailto:support@fintrack.app">
         <HelpCircle className="size-4" />
-        SupportLink
+        Contact support
       </Link>
     </Button>
   );

@@ -198,7 +198,7 @@ export default function PaymentsPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>PaymentMethodSelector</CardTitle>
+                  <CardTitle>Payment method</CardTitle>
                   <CardDescription>
                     Choose UPI for instant debit or BBPS for biller-backed
                     settlement.
@@ -330,7 +330,7 @@ function UPIIdInput({
 }) {
   return (
     <div className="space-y-2">
-      <Label>UPIIdInput</Label>
+      <Label>UPI ID</Label>
       <Input
         value={value}
         onChange={(event) => onChange(event.target.value)}
@@ -345,7 +345,7 @@ function SecurityAssuranceText() {
   return (
     <Alert>
       <LockKeyhole />
-      <AlertTitle>SecurityAssuranceText</AlertTitle>
+      <AlertTitle>Secure payment</AlertTitle>
       <AlertDescription>
         Bank-grade encryption protects payment context. We ask your UPI app or
         BBPS provider to complete authorization; FinTrack stores only the
@@ -360,7 +360,7 @@ function SupportLink() {
     <Button variant="link" className="h-auto justify-start px-0" asChild>
       <Link href="mailto:support@fintrack.app">
         <HelpCircle className="size-4" />
-        SupportLink
+        Contact support
       </Link>
     </Button>
   );
@@ -385,7 +385,7 @@ function PaymentConfirmationModal({
     <Dialog open={open} onOpenChange={(nextOpen) => !nextOpen && onCancel()}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Payment Confirmation Modal</DialogTitle>
+          <DialogTitle>Confirm payment</DialogTitle>
           <DialogDescription>
             Confirm the amount and payment rail before continuing.
           </DialogDescription>
@@ -426,7 +426,7 @@ function PaymentSuccessModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Success Modal</DialogTitle>
+          <DialogTitle>Payment successful</DialogTitle>
           <DialogDescription>
             Payment initiated successfully. Your receipt is ready for the vault.
           </DialogDescription>
@@ -466,7 +466,7 @@ function PaymentErrorModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Error Modal</DialogTitle>
+          <DialogTitle>Payment error</DialogTitle>
           <DialogDescription>
             We could not start the payment. Check your amount or payment method
             and try again.

@@ -586,7 +586,7 @@ function ParsingSummaryCard() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>ParsingSummaryCard</CardTitle>
+        <CardTitle>Parsing summary</CardTitle>
         <CardDescription>Confidence and review workload.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-5">
@@ -620,7 +620,7 @@ function OriginalStatementPreview() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>OriginalStatementPreview</CardTitle>
+        <CardTitle>Original statement</CardTitle>
         <CardDescription>Source snippets matched by the parser.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -639,7 +639,7 @@ function HelpTooltip() {
     <Card className="bg-paper-warm/80">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          HelpTooltip
+          Review help
           <Tooltip>
             <TooltipTrigger asChild>
               <button
@@ -680,7 +680,7 @@ function ConfirmAndSaveButton({
   return (
     <Button disabled={disabled} onClick={onClick}>
       <FileCheck2 className="size-4" />
-      ConfirmAndSaveButton
+      Confirm and save
     </Button>
   );
 }
@@ -689,7 +689,7 @@ function EditCancelButton({ onClick }: { onClick: () => void }) {
   return (
     <Button variant="outline" onClick={onClick}>
       <RotateCcw className="size-4" />
-      EditCancelButton
+      Reset edits
     </Button>
   );
 }
